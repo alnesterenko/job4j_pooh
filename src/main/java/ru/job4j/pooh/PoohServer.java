@@ -17,6 +17,7 @@ public class PoohServer {
         pool.execute(topicSchema);
     }
 
+    @SuppressWarnings("checkstyle:MethodLength")
     private void runServer() {
         ExecutorService pool = Executors.newCachedThreadPool();
         try (ServerSocket server = new ServerSocket(9000)) {
